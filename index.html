@@ -238,6 +238,7 @@
         <div class="team-grid">
             <!-- Khairil Ikhsan Hasibuan-->
             <div class="team-member">
+                <a href="https://khairil.next-digital.my.id" class="card-link" target="_blank"></a>
                 <div class="team-member-img">
                     <img src="image/pakbos.jpg" alt="CEO NEXONUS">
                     <div class="team-member-overlay">
@@ -261,6 +262,7 @@
             </div>
             <!-- Muh. Dzaky Luthfi -->
             <div class="team-member">
+                <a href="https://dzaky.next-digital.my.id" class="card-link" target="_blank"></a>
                 <div class="team-member-img">
                     <img src="image/zaki.jpg" alt="Lead Developer">
                     <div class="team-member-overlay">
@@ -285,6 +287,7 @@
 
             <!-- FirdaAmalia-->
             <div class="team-member">
+                <a href="https://firda.next-digital.my.id" class="card-link" target="_blank"></a>
                 <div class="team-member-img">
                     <img src="image/firdaamalia.jpg" alt="CTO NEXONUS">
                     <div class="team-member-overlay">
@@ -310,6 +313,7 @@
 
             <!-- Ammar Habibi -->
             <div class="team-member">
+                <a href="https://ammar.next-digital.my.id" class="card-link" target="_blank"></a>
                 <div class="team-member-img">
                     <img src="image/ammarhabibi.jpg" alt="UI/UX Designer">
                     <div class="team-member-overlay">
@@ -496,6 +500,32 @@
     });
 </script>
 <style>
+
+.team-member {
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .team-member .card-link {
+      position: absolute;
+      inset: 0; /* menutupi seluruh kartu */
+      z-index: 1;
+      text-indent: -9999px; /* sembunyikan teks */
+      background: transparent;
+    }
+    
+    /* agar ikon sosial tetap bisa diklik di atas overlay */
+    .team-member .team-member-social a {
+      position: relative;
+      z-index: 2;
+    }
+    
+    /* opsional: efek hover */
+    .team-member:hover {
+      transform: translateY(-5px);
+      transition: 0.3s;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
 
 /* Portfolio Section */
 .portfolio {
